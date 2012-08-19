@@ -1,0 +1,327 @@
+/* Eric Meyer Reset CSS File */
+
+@import url("reset.css");
+
+/* Template Layout CSS */
+body
+{
+	background: #111 url("fondo.jpg") no-repeat fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #888;
+	padding: 20px;
+	font-size: 14px;
+}
+
+a { color: #9C0; }
+a:hover { color: #FFF; }
+p { margin: 0 0 20px 0; }
+
+a img.imgright { float: right; padding: 5px; margin: 0 0 10px 15px; border: 1px solid #333; }
+a:hover img.imgright { border: 5px solid #9C0; padding: 1px; margin: 0 0 10px 15px; }
+
+h1, h2, h3, h4, h5 { font-weight: bold; font-size: 24px; margin: 0 0 15px 0; color: #FFF; text-shadow: 2px 2px 2px #000000; }
+
+/* Start Wrapper Container */
+
+#wrapper
+{
+	width: 940px;
+	margin: 0 auto;
+	background: #111;
+}
+
+/* End Wrapper Container */
+
+/* Start Nav Styles */
+
+nav
+{
+	width: 940px;
+	height: 40px;
+}
+
+nav ul.menu
+{
+	float: right;
+}
+
+nav ul.menu li
+{
+	display: inline;
+}
+
+nav ul.menu li a
+{
+	float: left;
+	line-height: 40px;
+	padding: 0 20px;
+	background: #111;
+	color: #FFF;
+	font-weight: bold;
+}
+
+nav ul.menu li a.active
+{
+	background: #191919;
+	color: #FFF;
+}
+
+nav ul.menu li a:hover
+{
+	
+	color: #9C0;
+}
+
+/* Start Header Styles */
+
+header
+{
+	margin-left:auto;
+	margin-right:auto;
+	width: 640px;
+	height: 107px;
+	padding: 0 20px;
+	background: #191919;
+	opacity:0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+botonheader
+{
+	margin-right:auto;
+	margin-left:20px;
+	width: 50px;
+	height: 50px;
+}
+
+header h1
+{
+	font-size: 42px;
+	line-height: 120px;
+	text-align: right;
+	font-weight: bold;
+	letter-spacing: -2px;
+	
+	text-shadow: 2px 2px 2px #000000;
+}
+
+header h1 a
+{
+	color: #FFF;
+}
+
+header h1 a:hover
+{
+	color: #9C0;
+}
+
+/* End Header Styles */
+
+/* Start Main Styles */
+
+section#main
+{
+	width: 940px;
+	line-height: 24px;
+}
+
+section#content
+{
+	float: left;
+	width: 560px;
+	padding: 20px;
+}
+
+section#cuerpo
+{
+	float: center;
+	width: 900px;
+	padding: 20px;
+}
+
+section#tabla
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	width: 800px;
+	padding: 0 20px;
+	border-top: 3px solid #222;
+	height: auto;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 1em;
+	border-bottom: 3px solid #222;
+}
+
+section#whitebold
+{
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	background: #000;
+}
+
+section#tabla2
+{
+	color: FFF#;
+	background-color: #000;
+}
+
+	aside#sidebar
+{
+	float: left;
+	width: 300px;
+	padding: 20px;
+}
+
+aside#sidebar ul
+{
+	margin: 0 0 15px 0;
+}
+
+aside#sidebar ul li
+{
+	display: block;
+}
+
+whitetext input[type=text]
+{
+	color: #ffffff;
+	background-color: #C1CDC1
+}
+
+aside#sidebar ul li a
+{
+	float: left;
+	width: 280px;
+	padding: 6px 10px;
+	border-left: 3px solid #222;
+	margin: 0 0 5px 0;
+	line-height: 20px;
+}
+
+aside#sidebar ul li a:hover
+{
+	background: #9C0;
+	border-left: 3px solid #9C0;
+	color: #111;
+}
+
+/* End Main Styles */
+
+/* Start Footer Styles */
+
+footer section#footertop
+{
+	width: 940px;
+	line-height: 22px;
+	border-top: 1px dotted #333;
+}
+
+aside.footer-column
+{
+	float: left;
+	width: 430px;
+	padding: 20px;
+}
+
+aside.footerr
+{
+	float: left;
+	width: 860px;
+	padding: 20px;
+}
+
+section#copyright
+{
+	clear: both;
+	width: 900px;
+	padding: 20px;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: left;
+	border-top: 1px dotted #333;
+}
+
+/* End Footer Styles */
+
+/* Start Template Copyright Styles */
+
+section#templatecopy
+{
+	clear: both;
+	width: 900px;
+	padding: 20px;
+	line-height: 22px;
+	text-align: center;
+	font-size: 12px;
+	border-top: 0px dotted #333;
+}
+
+section#templatecopy a
+{
+	font-weight: bold;
+}
+
+/* End Footer Styles */
+
+/*------------PLUGIN FORKIT JS-------------*/
+.forkit {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	width: 200px;
+	height: 150px;
+
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+	.forkit .tag {
+		display: block;
+		height: 30px;
+		width: 200px;
+
+		color: #fff;
+		background: #aa0000;
+		text-align: center;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 30px;
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+		-webkit-transform-origin: 15px 0px;
+		   -moz-transform-origin: 15px 0px;
+		    -ms-transform-origin: 15px 0px;
+		     -o-transform-origin: 15px 0px;
+		        transform-origin: 15px 0px;
+	}
+	.forkit .tag:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 196px;
+		height: 26px;
+		margin: 1px;
+		border: 1px solid rgba( 255, 255, 255, 0.4 );
+	}
+	.forkit .string {
+		display: block;
+		height: 1px;
+		width: 0px;
+		position: absolute;
+
+		background: rgba( 255, 255, 255, 0.7 );
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+		-webkit-transform-origin: 0px 0px;
+		   -moz-transform-origin: 0px 0px;
+		    -ms-transform-origin: 0px 0px;
+		     -o-transform-origin: 0px 0px;
+		        transform-origin: 0px 0px;
+	}
+/*------------END PLUGIN FORKIT-------------*/

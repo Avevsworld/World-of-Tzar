@@ -1,0 +1,84 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>World of tzar Guías</title>
+<link rel="shortcut icon" href="tzar.ico">
+<script src="jquery.min.js"></script>
+<script src="jquery.qtip1.min.js"></script>
+<script src="jquery.qtip2.min.js"></script>
+<meta name="keywords" content=" " />
+<meta name="description" content=" " />
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<!--Averapas estructurado...-->
+</head>
+<body>
+	<div id="wrapper">
+	<a class="forkit" target="_blank" data-text="¡Secreto!" data-text-detached="Sígueme en github >" href="https://github.com/alarar"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+	<script type="text/javascript" src="js/forkit.js"></script>    
+	 <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a class="active" href="guias.html">Guías</a></li>
+                <li><a href="jugar-online.html">Jugar online</a></li>
+                <li><a href="otros-juegos.html">Otros juegos</a></li>
+            </ul>
+        </nav>
+        
+        <header>
+        <img src="images/tzarheader.jpg">
+        </header>
+      
+        <section id="main" class="clearfix">
+          
+            <section id="cuerpo">
+    
+                <article>
+                    <h2 align="center">Arch</h2>
+					<p>Tutorial sobre el arch y su manejo, veremos sus más básicas funciones.</p>
+					<p>El programa arch, es el que se utiliza para editar el tzar desde dentro, aunque hemos analizado la situación y no puede editar:</p>
+					<p>A continuación explicare detalladamente como crear un mod (Modificación) del TzaR. Tambien como aplicarlo y todo eso.</p></br>
+					<h2 align="center">Guía 01: Aprendiendo a usar el editor</h2></br>
+					<p>Antes de nada necesitaremos descargar arch. puedes descargarlo en el apartado de Descargas. Lo siguiente es abrirlo, no os preocupeis, no requiere instalacion y a duras penas ocupa 0.1 mb. Aquí va una imagen de como es cuando lo abrimos:</p>
+					<p align="center"><img src="images/arch1.PNG"></p>
+					<p>Vemos por dentro que es muy muy simple. Vamos a abrir algun archivo .wdt de la carpeta packs de tzar y asi comprovaremos como va la cosa, abrid el archivo data2.wdt</p>
+					<p>Vemos que tiene muchos archivos, y si vamos abriendo sus carpetas del interior tiene muchas cosas interesantes. El data2.wdt es sumamente importante, pues en el centramos casi toda nuestra investigacion para crear el nuevo tzar. En el estan las tecnologias y ademas los grupos de bonus ( por ejemplo los lanceros tiene bonus contra caballeria, etc..) Pues todo eso sabemos editarlo, ademas tambien estamos intentando editar la IA (La máquina) que es bastante fácil, aunque aun no sabemos hacer mucho eso es fácil de aprender.</p>
+					<p>Ahora que os habeis famirializado con un archivo .wdt (Como es por dentro) Es hora de crear nuestro propio mod.</p></br>
+					<h2 align="center">Guía 02: Nuestra primera creación </h2></br>
+					<p>Lo primero es extraer nuestro material de trabajo, y como no primero experimentaremos con el data2.wdt y a modificar todos los campos y eso.</p>
+					<p align="center">Fijaos en la imagen a continuacion de como se extraen los archivos que estan dentro de un wdt:</p>
+					<p align="center"><img src="images/arch2.PNG"></p>
+					<p align="center">le damos donde indica la imagen y acto seguido pregunta esto:</p>
+					<p align="center"><img src="images/arch3.PNG"></p>
+					<p>Donde pone C:\Archivos de programa\Tzar\Packs\DATA2 escribid el directorio que mas os guste, siempre dandole el nombre a la carpeta donde lo guarde DATA2 (preferiblemente en una carpeta que creeis con antelación ya sea en el escritorio como en el mismo packs).</p>
+					<p>Una vez extraido. cerramos el arch y vamos a donde hemos extraido los archivos. vemos que estan tal cual estavan dentro del .wdt pero que ahora son todo un monton de archivos ¡Que bién!.</p>
+					<p>Seguidamente abrimos el archivo TECHNOLOGIES.ini que esta dentro de la carpeta DATA, tambien extraida . Vemos un texto muy muy largo, No os asusteis es mas fácil de lo que parece, modificar tecnologias, ya sea cambiar el tiempo o el oro que cuestan es muy fácil, incluso tambien cambiar el nombre aunque es mejor dejarlo como está. Bien pues vamos a crear nuestra primera modificación, y usaremos como no la tecnología "Feudalismo" que se encuentra la tercera de arriba a abajo:</p>
+					<b><p align="center"> <span style="color:white">[te_feudalism]</br>displayname = Feudalism</br>time = 30000</br>gold = 300</br></span></p></b>
+					<p>Se ve fácil, ya que tan solo es cambiar los numeritos. Provad a cambiar el 300 del gold por 100. Se quedaría asi:</p>
+					<b><p align="center"> <span style="color:white">[te_feudalism]</br>displayname = Feudalism</br>time = 30000</br>gold = 100</br></span></p></b>
+					<p>Con esta pequeña modificación ya estamos listos para provar suerte. Antes de cerrar , eliminad Too...dos los archivos menos el de TECHNOLOGIES y la carpeta DATA, donde dentro esta el mismo technologies.Abrid el arch de nuevo y seguid la imagen de abajo: </p>
+					<p align="center"><img src="images/arch4.PNG"></p>
+					<p align="center">Nos aparecerá esto:</p>
+					<p align="center"><img src="images/arch5.PNG"></p>
+					<p>Rellenadlo bien, al nombre del archivo ponedle tzar (esto es curioso, solo funciona con el nombre de el .exe que ejecuta el tzar, como "Tzar edición de oro.exe" o cosas asi por el estilo. normalmente es tzar.exe pero mirad que archivo ejecutais para que se inicie el tzar, y poned ese nombre[Tambien podeis copiar el tzar.exe y pegarlo en otro lado, cambiar el nombre a otro y para guardar el mod usais el mismo nombre, pero recordad que devereis pegar el .exe del tzar renombrado en la carpeta raiz del tzar]) Pero poned al final un .wdt porque el mismo programa no genera el .wdt si se os olvida adios mod.</p>
+					<p>Donde pone Archive Type poned la segunda opción la que sale Haemimont HPFS File (read-only) . Luego en la tercera opcion selecionamos la carpeta DATA2 en la que guardamos el archivo, de manera que quedara asi:</p>
+					<p align="center"><img src="images/arch6.PNG"></p>
+					<p align="center">Dadle a create y todavía nos faltará un paso. Sigamos la imagen:</p>
+					<p align="center"><img src="images/arch7.PNG"></p>
+					<p align="center">Aparecerá otra ventana:</p>
+					<p align="center"><img src="images/arch8.PNG"></p>
+					<p>Dadle a OK y el archivo se os comprimira (No se muy bien para que sirve eso de comprimir pero sin hacer esto no se consigue hacer ninguna modificacion...) y tras la compresion cerrad el arch</p>
+					<p>El archivo de el mod se suele crear en el mismo directorio del arch, aunque aveces se crea en el escritorio, en packs del tzar... es muy raro pero lo encontrareis seguro. Si no lo encontrais vais a inicio buscar, todos los archivos y carpetas, poneis discoduro y escribis el nombre que le Habeis dado sin ser necesario poner el .wdt y os lo deveria encontrar.</p>
+					<p>Ahora ya solo falta pegarlo a C:\Archivos de programa\Tzar\Packs o en el directorio que tengais el tzar. (Nota: No puede usarse en modo multijugador a menos que los jugadores con los que se establece conexión tengan la misma modificación, en pocas palabras, el mismo mod.) </p>
+				</br><p align="center"><a href="guias.html">Volver a guías</a></p>
+	  <footer>
+            <section id="templatecopy">
+                <p>Mundo tzar, Página web by <a href="https://twitter.com/#!/ave_alarar" target="_blank">Averapas</a></p>
+            </section>
+		</footer>
+      
+    </div>
+</body>
+</html>
